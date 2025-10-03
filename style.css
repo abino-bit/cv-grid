@@ -1,0 +1,308 @@
+:root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-light: #ecf0f1;
+            --text-dark: #2c3e50;
+            --sidebar-bg: #34495e;
+            --main-bg: #ffffff;
+            --border-color: #bdc3c7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: #f5f5f5;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            background: var(--sidebar-bg);
+            color: var(--text-light);
+            padding: 40px 30px;
+        }
+
+        .profileText {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profileImage {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid var(--secondary-color);
+        }
+
+        .profileImage img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profileText h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: var(--text-light);
+        }
+
+        .profileText span {
+            font-size: 1.1em;
+            color: var(--secondary-color);
+            font-weight: 300;
+        }
+
+        .contactInfo {
+            margin-top: 30px;
+        }
+
+        .title {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 8px;
+            transition: color 0.3s ease;
+        }
+
+        .title:hover {
+            color: var(--accent-color);
+        }
+
+        .contactInfo ul {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .contactInfo li {
+            margin: 12px 0;
+            display: flex;
+            align-items: center;
+            font-size: 0.95em;
+        }
+
+        .icon {
+            min-width: 30px;
+            font-size: 1.2em;
+            color: var(--secondary-color);
+        }
+
+        .text {
+            word-break: break-word;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            margin: 25px 0;
+        }
+
+        .sidebar h3 {
+            font-size: 1.3em;
+            margin: 20px 0 15px;
+            color: var(--secondary-color);
+        }
+
+        .sidebar p {
+            font-size: 0.95em;
+            line-height: 1.7;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .rightside {
+            padding: 40px;
+        }
+
+        .about h1 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .name {
+            color: var(--secondary-color);
+        }
+
+        .about h2 {
+            font-size: 1.5em;
+            color: var(--accent-color);
+            margin: 15px 0;
+        }
+
+        .about p {
+            font-size: 1.05em;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+
+        .education1, .rightside h3 {
+            font-size: 1.6em;
+            color: var(--primary-color);
+            margin: 35px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--secondary-color);
+            transition: border-color 0.3s ease;
+        }
+
+        .education1:hover, .rightside h3:hover {
+            border-color: var(--accent-color);
+        }
+
+        .box {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 20px;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .year h5 {
+            background: var(--secondary-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.95em;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .degree h4 {
+            font-size: 1.2em;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .degree h5 {
+            font-size: 1em;
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .degree p {
+            font-size: 0.95em;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .box2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .reference-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .box2 h4 {
+            font-size: 1.1em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .box2 p {
+            font-size: 0.9em;
+            margin: 5px 0;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+            }
+
+            .sidebar {
+                padding: 30px 20px;
+            }
+
+            .profileText h3 {
+                font-size: 1.5em;
+            }
+
+            .profileImage {
+                width: 150px;
+                height: 150px;
+            }
+
+            .rightside {
+                padding: 30px 20px;
+            }
+
+            .about h1 {
+                font-size: 2em;
+            }
+
+            .about h2 {
+                font-size: 1.3em;
+            }
+
+            .about p {
+                font-size: 1em;
+            }
+
+            .box {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                padding: 15px;
+            }
+
+            .year h5 {
+                display: inline-block;
+            }
+
+            .education1, .rightside h3 {
+                font-size: 1.4em;
+            }
+
+            .box2 {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                margin: 15px;
+            }
+
+            .sidebar {
+                padding: 35px 25px;
+            }
+
+            .rightside {
+                padding: 35px 30px;
+            }
+        }
+        @media (min-width: 1025px) {
+            .container {
+                grid-template-columns: 350px 1fr;
+            }
+        }
